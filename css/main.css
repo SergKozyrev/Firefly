@@ -1,0 +1,21 @@
+/* Default */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom */
