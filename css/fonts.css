@@ -1,0 +1,63 @@
+/*Open sans*/
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-light.woff2') format('woff2'),
+        url('../fonts/opensans-light.woff') format('woff'),
+        url('../fonts/opensans-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-semibold.woff2') format('woff2'),
+        url('../fonts/opensans-semibold.woff') format('woff'),
+        url('../fonts/opensans-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+/* Robot */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-light.eot');
+    src: url('../fonts/roboto-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-light.woff2') format('woff2'),
+        url('../fonts/roboto-light.woff') format('woff'),
+        url('../fonts/roboto-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-regular.eot');
+    src: url('../fonts/roboto-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-regular.woff2') format('woff2'),
+        url('../fonts/roboto-regular.woff') format('woff'),
+        url('../fonts/roboto-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-thin.eot');
+    src: url('../fonts/roboto-thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-thin.woff2') format('woff2'),
+        url('../fonts/roboto-thin.woff') format('woff'),
+        url('../fonts/roboto-thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+
+}
