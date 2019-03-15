@@ -35,7 +35,8 @@ body,
 ul,
 p,
 h1,
-h2 {
+h2,
+h4 {
     margin: 0;
     padding: 0;
 }
@@ -448,5 +449,83 @@ h2 {
 }
 
 /* Customers end */
+
+/* Services start */
+
+.services {
+    position: relative;
+    padding: 163px 0 80px;
+    background: #fff url(../images/servicesbg.png) no-repeat -332px 106px;
+}
+
+.services-inner {
+    max-width: 730px;
+    margin-left: auto;
+}
+
+.services-title {
+    margin-bottom: 22px;
+    color: #303842;
+    font-family: 'roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.services-subtitle {
+    margin-bottom: 117px;
+    color: #8191a6;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.services-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 45%;
+    margin-bottom: 85px;
+}
+
+.service-icon {
+    color: #8191a6;
+    font-size: 40px;
+}
+
+.service:hover .service-icon {
+    color: #4caf50;
+}
+
+.service-desc {
+    max-width: 268px;
+    padding-left: 26px;
+    border-left: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.service-name {
+    margin-bottom: 16px;
+    font-family: 'open-sans', sans-serif;
+    color: #252b33;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.service-text {
+    font-family: 'open-sans', sans-serif;
+    color: #8191a6;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* Services end */
 
 /* Main end */
