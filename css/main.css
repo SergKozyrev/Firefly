@@ -454,8 +454,22 @@ h4 {
 
 .services {
     position: relative;
-    padding: 163px 0 80px;
-    background: #fff url(../images/servicesbg.png) no-repeat -332px 106px;
+    padding-top: 163px;
+    background: #fff url(../images/servicesbg.png) no-repeat left 180px;
+}
+
+.services::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: -1;
+    bottom: 0;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: skewY(-6deg);
+    transform: skewY(-6deg);
 }
 
 .services-inner {
@@ -481,15 +495,27 @@ h4 {
 }
 
 .services-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
     margin-bottom: 85px;
 }
@@ -527,5 +553,87 @@ h4 {
 }
 
 /* Services end */
+
+/* Advantages star */
+
+.advantages {
+    position: relative;
+    padding: 267px 0 152px;
+    background: #fafafa url(../images/advantagesbg.png) no-repeat right 95px;
+    z-index: -2;
+}
+
+.advantages-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.advantages-title {
+    margin-bottom: 30px;
+    color: #303842;
+    font-family: 'roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.advantages-subtitle {
+    margin-bottom: 110px;
+    color: #8191a6;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.advantages-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 430px;
+}
+
+.advantage {
+    width: 150px;
+    margin-bottom: 80px;
+}
+
+.advantage-title {
+    color: #303842;
+    font-family: 'open-sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.advantage-count {
+    display: block;
+    color: #303842;
+    font-family: 'roboto', sans-serif;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.project-count {
+    color: #32d5ba;
+}
+
+.cofees-count {
+    color: #6dc4f2;
+}
+
+.customers-count {
+    color: #ffd13c;
+}
+
+.code-count {
+    color: #f44336;
+}
+
+/* Advantages end */
 
 /* Main end */
