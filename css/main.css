@@ -1,8 +1,6 @@
 /* Default */
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -31,14 +29,13 @@ body {
     line-height: 1;
 }
 
-body,
-ul,
-p,
-h1,
-h2,
-h4 {
+body, ul, p, h1, h2, h4 {
     margin: 0;
     padding: 0;
+}
+
+input, button, textarea {
+    border: none;
 }
 
 .container {
@@ -62,7 +59,7 @@ h4 {
 }
 
 .btn:hover {
-    /* box-shadow: inset 0 0 12px rgba(108, 108, 108, 0.23); */
+    cursor: pointer;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -74,12 +71,10 @@ h4 {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
-
     50% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     100% {
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -91,23 +86,34 @@ h4 {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
-
     50% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     100% {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
 }
 
-.circle,
-.triangle,
-.rect {
+.circle, .triangle, .rect {
     position: absolute;
     z-index: -1;
+}
+
+.section-title {
+    color: #303842;
+    font-family: 'roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.section-subtitle {
+    color: #8191a6;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
 }
 
 /* Custom */
@@ -249,8 +255,7 @@ h4 {
     transition: .3s;
 }
 
-.menu-link:hover,
-.menu-link.active {
+.menu-link:hover, .menu-link.active {
     border-top: 2px solid #4caf50;
 }
 
@@ -277,10 +282,7 @@ h4 {
     max-width: 883px;
     margin: 0 auto 40px;
     text-align: center;
-    color: #303842;
-    font-family: 'roboto', sans-serif;
     font-size: 56px;
-    font-weight: 300;
     line-height: 64px;
 }
 
@@ -416,18 +418,7 @@ h4 {
 
 .customers-title {
     margin-bottom: 13px;
-    color: #303842;
     font-family: 'roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.customers-subtitle {
-    color: #8191a6;
-    font-family: "open-sans", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
 }
 
 .customers-logos {
@@ -454,22 +445,8 @@ h4 {
 
 .services {
     position: relative;
-    padding-top: 163px;
+    /* padding-top: 163px; */
     background: #fff url(../images/servicesbg.png) no-repeat left 180px;
-}
-
-.services::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #fff;
-    z-index: -1;
-    bottom: 0;
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: skewY(-6deg);
-    transform: skewY(-6deg);
 }
 
 .services-inner {
@@ -479,19 +456,10 @@ h4 {
 
 .services-title {
     margin-bottom: 22px;
-    color: #303842;
-    font-family: 'roboto', sans-serif;
-    font-size: 34px;
-    font-weight: 300;
 }
 
 .services-subtitle {
     margin-bottom: 117px;
-    color: #8191a6;
-    font-family: 'roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
 }
 
 .services-desc {
@@ -558,9 +526,8 @@ h4 {
 
 .advantages {
     position: relative;
-    padding: 267px 0 152px;
+    /* padding: 267px 0 152px; */
     background: #fafafa url(../images/advantagesbg.png) no-repeat right 95px;
-    z-index: -2;
 }
 
 .advantages-inner {
@@ -570,19 +537,10 @@ h4 {
 
 .advantages-title {
     margin-bottom: 30px;
-    color: #303842;
-    font-family: 'roboto', sans-serif;
-    font-size: 34px;
-    font-weight: 300;
 }
 
 .advantages-subtitle {
     margin-bottom: 110px;
-    color: #8191a6;
-    font-family: 'roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
 }
 
 .advantages-desc {
@@ -635,5 +593,154 @@ h4 {
 }
 
 /* Advantages end */
+
+/* Contact Us start */
+
+.contact-us {
+    position: relative;
+}
+
+.contact-us-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-us-title {
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.contact-us-subtitle {
+    margin-bottom: 100px;
+    padding: 0 110px;
+    text-align: center;
+}
+
+.contact-us-form {
+    padding: 65px;
+    -webkit-box-shadow: 0 0 28px rgba(183, 183, 183, 0.45);
+            box-shadow: 0 0 28px rgba(183, 183, 183, 0.45);
+    border-radius: 9px;
+    background-color: #ffffff;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: "open-sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 18px 20px 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    font-family: "open-sans", sans-serif;
+    font-size: 18px;
+}
+
+.form-initials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.form-name, .form-lastname {
+    width: 48%;
+}
+
+.form-name {
+    float: left;
+}
+
+.form-lastname {
+    float: right;
+}
+
+.form-message {
+    height: 180px;
+    margin-bottom: 57px;
+    resize: none;
+}
+
+.contact-us-circle1 {
+    top: 136px;
+    left: 504px;
+    -webkit-animation: uprise 2s infinite;
+    animation: uprise 2s infinite;
+}
+
+.contact-us-circle2 {
+    bottom: 480px;
+    right: 56px;
+    -webkit-animation: uprise 4s infinite;
+    animation: uprise 4s infinite;
+}
+
+.contact-us-circle3 {
+    bottom: 348px;
+    right: 196px;
+    -webkit-animation: uprise 3s infinite;
+    animation: uprise 3s infinite;
+}
+
+.contact-us-circle4 {
+    left: 545px;
+    bottom: 70px;
+    -webkit-animation: uprise 2s infinite;
+    animation: uprise 2s infinite;
+}
+
+.contact-us-circle5 {
+    top: 260px;
+    right: 240px;
+    -webkit-animation: uprise 5s infinite;
+    animation: uprise 6s infinite;
+}
+
+.contact-us-circle6 {
+    left: 143px;
+    bottom: 173px;
+    -webkit-animation: uprise 4s infinite;
+    animation: uprise 4s infinite;
+}
+
+.contact-us-circle7 {
+    left: 143px;
+    top: 330px;
+    -webkit-animation: uprise 3s infinite;
+    animation: uprise 3s infinite;
+}
+
+.contact-us-triangle1 {
+    bottom: 210px;
+    right: 100px;
+    -webkit-animation: uprise 2s infinite;
+    animation: uprise 2s infinite;
+}
+
+.contact-us-rect1 {
+    top: 195px;
+    right: 564px;
+    -webkit-animation: uprise 3s infinite;
+    animation: uprise 3s infinite;
+}
+
+.contact-us-rect2 {
+    left: 300px;
+    top: 450px;
+    -webkit-animation: uprise 2s infinite;
+    animation: uprise 3s infinite;
+}
+
+/* Contact Us end */
 
 /* Main end */
