@@ -255,7 +255,7 @@ input, button, textarea {
     transition: .3s;
 }
 
-.menu-link:hover, .menu-link.active {
+.menu-link:hover {
     border-top: 2px solid #4caf50;
 }
 
@@ -370,8 +370,8 @@ input, button, textarea {
 .home-triangle1 {
     right: 780px;
     bottom: 88px;
-    -webkit-animation: uprise 3s infinite;
-    animation: uprise 3s infinite;
+    -webkit-animation: uprise 4s infinite;
+    animation: uprise 4s infinite;
 }
 
 .home-rect1 {
@@ -445,8 +445,10 @@ input, button, textarea {
 
 .services {
     position: relative;
-    /* padding-top: 163px; */
-    background: #fff url(../images/servicesbg.png) no-repeat left 180px;
+}
+
+.services-container {
+    background: #fff url(../images/servicesbg.png) no-repeat -70px top;
 }
 
 .services-inner {
@@ -526,13 +528,16 @@ input, button, textarea {
 
 .advantages {
     position: relative;
-    /* padding: 267px 0 152px; */
-    background: #fafafa url(../images/advantagesbg.png) no-repeat right 95px;
+    background: #fafafa;
+}
+
+.advantages-container {
+    background: #fafafa url(../images/advantagesbg.png) no-repeat right top;
 }
 
 .advantages-inner {
     max-width: 750px;
-    margin: 0 auto;
+    margin-right: auto;
 }
 
 .advantages-title {
@@ -619,7 +624,7 @@ input, button, textarea {
 .contact-us-form {
     padding: 65px;
     -webkit-box-shadow: 0 0 28px rgba(183, 183, 183, 0.45);
-            box-shadow: 0 0 28px rgba(183, 183, 183, 0.45);
+    box-shadow: 0 0 28px rgba(183, 183, 183, 0.45);
     border-radius: 9px;
     background-color: #ffffff;
 }
@@ -649,8 +654,8 @@ input, button, textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .form-name, .form-lastname {
