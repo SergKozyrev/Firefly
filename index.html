@@ -108,26 +108,20 @@
         </section>
         <!-- /#home -->
         <section id="customers" class="customers">
-            <div class="customers-wrap">
-                <div class="container">
-                    <div class="customers-inner">
-                        <div class="customers-desc">
-                            <h2 class="customers-title section-title">Our Customers</h2>
-                            <p class="customers-subtitle section-subtitle ">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit. Aenean commodo ligula eget dolor.</p>
-                        </div>
-                        <div class="customers-logos">
-                            <img class="customer-logo" src="images/vintage.png" alt="Vintage Customer">
-                            <img class="customer-logo" src="images/woody.png" alt="Woody Customer">
-                            <img class="customer-logo" src="images/lumber.png" alt="Lumber Jack Customer">
-                            <img class="customer-logo" src="images/racer.png" alt="Retro Racer Customer">
-                        </div>
-                    </div>
-                    <!-- /.customers-inner -->
+            <div class="container customers-container">
+                <div class="customers-desc">
+                    <h2 class="customers-title section-title">Our Customers</h2>
+                    <p class="customers-subtitle section-subtitle ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor.</p>
                 </div>
-                <!-- /.container -->
+                <div class="customers-logos">
+                    <img class="customer-logo" src="images/vintage.png" alt="Vintage Customer">
+                    <img class="customer-logo" src="images/woody.png" alt="Woody Customer">
+                    <img class="customer-logo" src="images/lumber.png" alt="Lumber Jack Customer">
+                    <img class="customer-logo" src="images/racer.png" alt="Retro Racer Customer">
+                </div>
             </div>
-            <!-- /.customers-wrap -->
+            <!-- /.container -->
         </section>
         <!-- /.customers -->
         <section id="services" class="services">
@@ -176,6 +170,9 @@
                 <!-- /.services-inner -->
             </div>
             <!-- /.container -->
+            <svg class="services-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="#fafafa" points="0,100 100,0 100,100" />
+            </svg>
         </section>
         <!-- /.services -->
         <section id="advantages" class="advantages">
@@ -207,6 +204,9 @@
                 <!-- /.advantages-inner -->
             </div>
             <!-- /.container -->
+            <svg class="advantages-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="#fff" points="0,100 100,0 100,100" />
+            </svg>
         </section>
         <!-- /.advantages -->
         <section id="contact-us" class="contact-us">
@@ -216,17 +216,17 @@
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
                 <form class="contact-us-form">
                     <label class="form-label" for="email">Email Address</label>
-                    <input type="email" name="email" id="email" class="form-email form-input">
+                    <input class="form-input" type="email" name="email" id="email" required>
                     <span class="form-name">
                         <label class="form-label" for="name">First Name</label>
-                        <input type="text" name="name" id="name" class="form-input">
+                        <input class="form-input" type="text" name="name" id="name" required>
                     </span>
                     <span class="form-lastname">
                         <label class="form-label" for="name">Last Name</label>
-                        <input type="text" name="lastname" id="lastname" class="form-input">
+                        <input class="form-input" type="text" name="lastname" id="lastname" required>
                     </span>
                     <label class="form-label" for="message">Message</label>
-                    <textarea name="message" id="message" class="form-message form-textarea"></textarea>
+                    <textarea class="form-message form-textarea" name="message" id="message"></textarea>
                     <button class="btn form-btn">Send now</button>
                 </form>
                 <!-- /.contact-us-form -->
@@ -262,13 +262,61 @@
             <svg class="rect contact-us-rect2" width="16" height="68">
                 <rect x="0" y="0" width="6" height="58" rx="3" fill="#3f51b5"></rect>
             </svg>
-
+            <svg class="contact-us-svg" viewBox="0 0 100 200" preserveAspectRatio="none">
+                <polygon fill="#fafafa" points="0,100 100,0 100,200 0,200" />
+            </svg>
         </section>
         <!-- /.contact -->
     </main>
     <!-- /.page-main -->
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <div class="footer-desc">
+                <div class="footer-logo"><a href="#"><img src="images/logo.png" alt="Firefly Logo"></a></div>
+                <p class="footer-about">Just then her head struck against the roof of the hall: in fact she was now more
+                    than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
+                </p>
+                <p class="footer-law">
+                    <a class="privacy" href="#">Privacy Policy</a>
+                    <a class="terms" href="#">Terms and Condition</a>
+                </p>
+                <p class="copyright">Copyright &copy; 2016 ThemeXpert</p>
+            </div>
+            <div class="categories">
+                <h2 class="categories-title">categories</h2>
+                <ul class="categories-list">
+                    <li class="categories-item"><a href="#" class="categories-link">Home</a></li>
+                    <li class="categories-item"><a href="#" class="categories-link">Testimonials</a></li>
+                    <li class="categories-item"><a href="#" class="categories-link">Team</a></li>
+                    <li class="categories-item"><a href="#" class="categories-link">Career</a></li>
+                    <li class="categories-item"><a href="#" class="categories-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="community">
+                <h2 class="community-title">community</h2>
+                <ul class="community-list">
+                    <li class="community-item"><a href="#" class="community-link">Blog</a></li>
+                    <li class="community-item"><a href="#" class="community-link">Discussions</a></li>
+                    <li class="community-item"><a href="#" class="community-link">Collections</a></li>
+                    <li class="community-item"><a href="#" class="community-link">Members</a></li>
+                    <li class="community-item"><a href="#" class="community-link">Products</a></li>
+                    <li class="community-item"><a href="#" class="community-link">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h2 class="follow-title">follow us</h2>
+                <ul class="follow-list">
+                    <li class="follow-item"><a href="#" class="follow-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="follow-item"><a href="#" class="follow-link"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="follow-item"><a href="#" class="follow-link"><i class="fab fa-instagram"></i></a></li>
+                    <li class="follow-item"><a href="#" class="follow-link"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
     <!-- /.page-footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
