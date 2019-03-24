@@ -1,6 +1,7 @@
 var sections = $('section')
   , nav = $('.page-header')
   , nav_height = nav.outerHeight() + 111;
+  
 // Подсветка пункта меню в зависимости от секции
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop();
@@ -25,10 +26,15 @@ nav.find('.menu-link').on('click', function () {
   return false;
 });
 
-// Счетчик чисел при скролле
 $(document).ready(function () {
   var show = true;
   var countbox = ".advantages";
+  // Показать/Скрыть меню
+  $(".collapse-menu").on("click", function () {
+    $(this).toggleClass("is-active");
+  });
+
+  // Анимация чисел при скролле
   $(window).on("scroll load resize", function () {
     if (!show) return false;
     var w_top = $(window).scrollTop();
